@@ -1,1 +1,3 @@
-console.log("JS is connected");
+;(function () {
+	
+	'use strict';

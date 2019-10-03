@@ -1,303 +1,321 @@
-
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Jessica Lee Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+   
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<html class="no-js"> 
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Jessica Lee| UX</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Jessica UX/UI Design portfolio" />
-	<meta name="keywords" content="portfolio, Jessica Lee" />
-	<meta name="author" content="Jessica Lee" />
+    <script type="text/javascript" src="assets/js/main.js"></script>	
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+</head>
+</body>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,600,700" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/icon.png">
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="css/style.css">
+<script id="website-template" type="text/x-handlebars-template">
+  <div class="website-list">
+    <h1>{{title}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+  </div>
+</script>
 
 
-
-	<script src="js/modernizr-2.6.2.min.js"></script>
-
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406252-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-112406252-1');
-        </script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,600,700" rel="stylesheet">
 
 
-    </head>
-	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Superfish -->
+    <link rel="stylesheet" href="css/superfish.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-<!--		<div id="fh5co-header">-->
-			<header id="fh5co-header-section" class="nav-down">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406252-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112406252-1');
+
+    </script>
+
+</head>
+
+<body>
+        <div id="fh5co-wrapper">
+        <div id="fh5co-page">
+
+  <!--		<div id="fh5co-header">-->
+            <header id="fh5co-header-section" class="nav-down">
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html"><span>Jessica</span> <span style="font-weight: 200">Lee</span></a></h1>
+                        <h1 id="portfolio-logo"><a href="index.html"><span>Jessica</span> <span style="font-weight: 200">Lee</span></a></h1>
 
-						<!-- START #fh5co-menu-wrap -->
-						<nav id="fh5co-menu-wrap" role="navigation">
-							<ul class="sf-menu" id="fh5co-primary-menu">
-								<li>
-									<a href="index.html#fh5co-work-section" class="active fh5co-sub-ddown">Projects</a>
-									<ul class="fh5co-sub-menu">
-										<li><a href="./leoBurnett.html" target="_self">LeoBurnett Internship</a></li>
+                        <!-- START #fh5co-menu-wrap -->
+                        <nav id="fh5co-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="fh5co-primary-menu">
+                                <li>
+                                    <a href="index.html#fh5co-work-section" class="active fh5co-sub-ddown">Projects</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li><a href="./leoBurnett.html" target="_self">LeoBurnett Internship</a></li>
                                         <li><a href="./dithink.html" target="_self">DI Think</a></li>
-										<li><a href="./current07.html" target="_self">Current 07</a></li>
-										<li><a href="./tomorrowwisdomlivingmuseum.html" target="_self">Tomorrow Wisdom Living Museum Installation</a></li>
-									</ul>
-								</li>
-								<li><a href="">About</a></li>
-								<li><a href="">Contact</a></li>
-								<li><a href="" target="_blank">Resume</a></li>
-							</ul>
-						</nav>
+                                        <li><a href="./current07.html" target="_self">Current 07</a></li>
+                                        <li><a href="./tomorrowwisdomlivingmuseum.html" target="_self">Tomorrow Wisdom Living Museum Installation</a></li>
+                                    </ul>
+                                </li>
+                                <ul class="navigation-bar">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="" target="_blank">Resume</a></li>
+                                </ul>
 
-					</div>
-				</div>
-			</header>
-<!--		</div>-->
+                        </nav>
 
-		<div class="fh5co-hero" >
-			<!--<div class="fh5co-overlay"></div>-->
-			<div class="fh5co-cover container" data-stellar-background-ratio="0.5" style="background-image: url( )">
-				<div class="intro desc animate-box">
-					<h2>Hi! I'm Jessica Lee,</h2>
-					<h2>a <span class="underline-magical" style="display: inline;">UX/UI Designer</span> passionate about </h2>
-					<h2>analyzing users' behaviors and emotions <span class="underline-magical" style="display: inline;"> through conducting research</span> and applying fascinating user centered design solutions to create a delightful experience for each user.</h2>
-				</div>
-			</div>
-		</div>
-		<!-- end:header-top -->
+                    </div>
+                </div>
+            </header>
 
-		<div id="fh5co-work-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7 col-sm-7">
-						<div class="fh5co-grid animate-box" style="background-image:url(img/portfolio/leoburnett/landing-new.jpg);">
-							<a class="image-popup text-center" href="./leoburnett.html">
-								<div class="prod-title">
-									<h3>LeoBurnett Internship</h3>
-									<span>Mobile interaction design, Advertising</span>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-5 col-sm-5">
-						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/current07/landing-new.jpg);">
-							<a class="image-popup text-center" href="./dithink.html">
-								<div class="prod-title">
-									<h3>DI Think</h3>
-									<span>Web design, Toolkit</span>
-								</div>
-							</a>
-						</div>
-					</div>
-                    
-					<div class="col-md-5 col-sm-5">
-						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/current07/landing-thumbnail.jpg);">
-							<a class="image-popup text-center" href="./current07.html">
-								<div class="prod-title">
-									<h3>Current 07</h3>
-									<span>Publication design</span>
-								</div>
-							</a>
-						</div>
-					</div>
-                    
-                    <div class="col-md-7 col-sm-7">
-						<div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/kasvi/landing-thumbnail.jpg);">
-							<a class="image-popup text-center" href="./tomorrowwisdommuseuminstallation.html">
-								<div class="prod-title">
-									<h3>Tomorrow Wisdom Museum Installation</h3>
-									<span>Exhibition Design</span>
-								</div>
-							</a>
-						</div>
-					</div>
-                    
-                    
-				</div>
-			</div>
-		</div>
-		<!-- fh5co-work-section -->
+            <!--<div class="fh5co-overlay"></div>-->
 
-			<div id="fh5co-content-section" class="fh5co-section-gray">
-				<div class="container">
-					<div class="row">
-						
-							<h3>Hi, I am Jessica!</h3>
-							<p>Storyteller  |  Curious Innovator |  Design and Technology Nerd</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-1 text-center row-bottom-padded-lg">
-							<img src="img/about.jpg" class="img-circle img-responsive" style="padding: 1%; border: 1px solid #9e9e9e;">
-						</div>
-						<div class="col-sm-12 col-sm-offset-1 col-md-6 col-md-offset-1">
-							<p>I am a UX/UI designer who focuses on understanding users’ behaviors and emotions while applying design thinking to <strong>create experiences that delight users in a positive way 
+            <div class="fh5co-hero">
+                
+
+                <div class="fh5co-cover container" data-stellar-background-ratio="0.5" style="background-image: url( )">
+                    <div class="intro desc animate-box"></div>
+                        <h2>Hi! I'm Jessica Lee,</h2>
+                        <h2>a <span class="underline-magical" style="display: inline;">UX/UI Designer</span> passionate about </h2>
+                        <h2>analyzing users' behaviors and emotions <span class="underline-magical" style="display: inline;"> through conducting research</span> and applying fascinating user centered design solutions to create a delightful experience for each user.</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- end:header-top -->
+            <div id="fh5co-work-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-7">
+                            <div class="fh5co-grid animate-box" style="background-image:url(img/portfolio/leoburnett/landing-new.jpg);">
+                                <a class="image-popup text-center" href="./leoburnett.html">
+                                    <div class="prod-title">
+                                        <h3>LeoBurnett Internship</h3>
+                                        <span>Mobile Interaction Design, Advertising</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/current07/landing-new.jpg);">
+                                <a class="image-popup text-center" href="./dithink.html">
+                                    <div class="prod-title">
+                                        <h3>DI Think</h3>
+                                        <span>Web design, Toolkit</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-5">
+                            <div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/current07/landing-thumbnail.jpg);">
+                                <a class="image-popup text-center" href="./current07.html">
+                                    <div class="prod-title">
+                                        <h3>Current 07</h3>
+                                        <span>Publication design</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-sm-7">
+                            <div class="fh5co-grid animate-box" style="background-image: url(img/portfolio/kasvi/landing-thumbnail.jpg);">
+                                <a class="image-popup text-center" href="./tomorrowwisdommuseuminstallation.html">
+                                    <div class="prod-title">
+                                        <h3>Tomorrow Wisdom Museum Installation</h3>
+                                        <span>Exhibition Design</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- fh5co-work-section -->
+
+            <div id="fh5co-content-section" class="fh5co-section-gray">
+                <div class="container">
+                    <div class="row">
+
+                        <h3>Hi, I am Jessica!</h3>
+                        <p>Storyteller | Curious Innovator | Design and Technology Nerd</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-1 text-center row-bottom-padded-lg">
+                        <img src="img/about.jpg" class="img-circle img-responsive" style="padding: 1%; border: 1px solid #9e9e9e;">
+                    </div>
+                    <div class="col-sm-12 col-sm-offset-1 col-md-6 col-md-offset-1">
+                        <p>I am a UX/UI designer who focuses on understanding users’ behaviors and emotions while applying design thinking to <strong>create experiences that delight users in a positive way
                             </strong>. I am interested in designing applications, publications, user interfaces while exploring the dialogue between products, people, and contexts. </p>
-							<p>Through my past work experiences I've learned conceptual development skills, worked on UX/UI design and worked closely with Art Directors to create advertisements and installations for worldwide known companies. Currently, I am pursuing a Master’s degree in Design and Technology at Parsons School of Design in New York City.</p>
-                            
-							<span><a class="btn btn-primary" href="#fh5co-contact-section">Get in Touch</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- fh5co-content-section -->
+                        <p>Through my past work experiences I've learned conceptual development skills, worked on UX/UI design and worked closely with Art Directors to create advertisements and installations for worldwide known companies. Currently, I am pursuing a Master’s degree in Design and Technology at Parsons School of Design in New York City.</p>
+
+                        <span><a class="btn btn-primary" href="#fh5co-contact-section">Get in Touch</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fh5co-content-section -->
+
+        <div id="fh5co-services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                        <h3>My Toolbox</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="services animate-box">
+                            <span><i class="icon-tools"></i></span>
+                            <h3>UX Design</h3>
+                            <p>I create creative solutions that encompass the realms of mobile, web, and more, and think about products within the context</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="services animate-box">
+                            <span><i class="icon-magnifying-glass"></i></span>
+                            <h3>User Research</h3>
+                            <p>I conduct head-to-toe qualitative user research, including interviews, surveys and usability testing, to uncover user needs and business potentials, and frame ambiguous questions of user behavior with rigorous data-driven experiment design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="services animate-box">
+                            <span><i class="icon-globe"></i></span>
+                            <h3>Visual Design</h3>
+                            <p>Coming from communication design and advertising background, I focus on developing an understanding of basic advertising concepts, including advertising stratgey, design development, and execution. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fh5co-services-section -->
+        
+        <div id="fh5co-contact-section" class="fh5co-section-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                        <h3>Contact me</h3>
+                        <p>Interested in working together, or sharing ideas? Awesome. Let's get in touch!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row text-center">
+                    <a href="https://www.linkedin.com/in/jessica-lee-47720b13a/" target="_blank">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="contact animate-box">
+                                <span><i class="fa-ic-round fa-ic-round-background fab fa-linkedin-in"></i></span>
+                                <h3>in/jessica-lee</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mailto:tifwu@umich.edu" target="_blank">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="contact animate-box">
+                                <span><i class="fa-ic-round fa-ic-round-background fas fa-envelope"></i></span>
+                                <h3>
+                                    <leej039@newschool class="edu">
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/jessicaca.lee/" target="_blank">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="contact animate-box">
+                                <span><i class="fa-ic-round fa-ic-round-background fab fa-instagram"></i></span>
+                                <h3>@jessicaca.lee</h3>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
 
 
-		<div id="fh5co-services-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>My Toolbox</h3>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-tools"></i></span>
-							<h3>UX Design</h3>
-							<p>I create creative solutions that encompass the realms of mobile, web, and more, and think about products within the context</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-magnifying-glass"></i></span>
-							<h3>User Research</h3>
-							<p>I conduct head-to-toe qualitative user research, including interviews, surveys and usability testing, to uncover user needs and business potentials, and frame ambiguous questions of user behavior with rigorous data-driven experiment design</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-globe"></i></span>
-							<h3>Visual Design</h3>
-							<p>Coming from communication design and advertising background, I </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- fh5co-services-section -->
 
-			<div id="fh5co-contact-section" class="fh5co-section-gray">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-							<h3>Contact me</h3>
-							<p>Interested in working together, sharing ideas or knowing best bubble tea places? Awesome. Let's get in touch!</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="row text-center">
-						<a href="https://www.linkedin.com/in/jessica-lee-47720b13a/" target="_blank">
-							<div class="col-md-3 col-sm-3">
-								<div class="contact animate-box">
-									<span><i class="fa-ic-round fa-ic-round-background fab fa-linkedin-in"></i></span>
-									<h3>in/jessica-lee</h3>
-								</div>
-							</div>
-						</a>
-						<a href="mailto:tifwu@umich.edu" target="_blank">
-							<div class="col-md-3 col-sm-3">
-								<div class="contact animate-box">
-									<span><i class="fa-ic-round fa-ic-round-background fas fa-envelope"></i></span>
-									<h3><leej039@newschool class="edu"></h3>
-								</div>
-							</div>
-						</a>
-						<a href="https://www.instagram.com/jessicaca.lee/" target="_blank">
-							<div class="col-md-3 col-sm-3">
-								<div class="contact animate-box">
-									<span><i class="fa-ic-round fa-ic-round-background fab fa-instagram"></i></span>
-									<h3>@jessicaca.lee</h3>
-								</div>
-							</div>
-                    
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
+    <!-- END portoflio-contact -->
 
 
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <p class="fh5co-social-icons">
+                            <a href="mailto:leej039@newschool.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/jessica-lee-47720b13a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/jessicaca.lee/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-		<!-- END fh5co-contact -->
 
+    </div>
+    <!-- END fh5co-page -->
 
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icons">
-                                <a href="mailto:leej039@newschool.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-								<a href="https://www.linkedin.com/in/jessica-lee-47720b13a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-								<a href="https://www.instagram.com/jessicaca.lee/" target="_blank"><i class="fab fa-dribbble"></i></a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
+    </div>
 
-	</div>
-	<!-- END fh5co-page -->
-
-	</div>
-	<!-- END fh5co-wrapper -->
-
-	<!-- jQuery -->
+    <!-- jQuery -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/jquery.min.js"></script>
-    
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Superfish -->
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.js"></script>
+    <script src="js/jquery.min.js"></script>
 
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Stellar -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Superfish -->
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.js"></script>
 
-	</body>
+    <!-- Main JS  -->
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>

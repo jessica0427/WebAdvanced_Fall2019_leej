@@ -10,8 +10,7 @@ function setup() {
 	cv.background(255, 255, 255)
 
 	// Start the socket connection
-	const port = process.env.PORT;
-	socket = io.connect('Staring server at ${port}');
+	socket = io.connect('http://localhost:3000')
 
 	// Callback function
 	socket.on('mouse', data => {
